@@ -33,3 +33,8 @@ MySearch.java
 SET.java
 ST.java
 WeightedQuickUnionUF.java
+
+projects completed for algorithms
+=================================
+quicksortCutoff.java
+LCS.java
