@@ -1,7 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 public class LCS 
 {
 	/*Implement a solution to the longest common subsequence problem.
@@ -19,7 +18,6 @@ public class LCS
 		int m = X.length();
 		int n = Y.length();
 		
-		//int[][] b = new int[m][n];
 		int[][] c = new int[m + 1][n + 1];
 		
 		for (int i = 0; i <= m; i++)
@@ -33,27 +31,17 @@ public class LCS
 			for (int j = 1; j <= n; j++)
 			{
 				if (X.charAt(i - 1) == Y.charAt(j - 1))
-				{
 					c[i][j] = c[i - 1][j - 1] + 1;
-					//b[i][j] = 1;
-				}
 				
 				else if (c[i - 1][j] >= c[i][j - 1])
-				{
 					c[i][j] = c[i - 1][j];
-					//b[i][j] = 2;
-				}
 				
 				else
-				{
 					c[i][j] = c[i][j - 1];
-					//b[i][j] = 3;
-				}
 			}
 		}
 		
 		System.out.println("LCS length: " + c[m][n]);
-		//LCSPrint(b, X, X.length(), Y.length());
 		LCSPrint(c, X, X.length(), Y.length());
 	}
 	
@@ -62,20 +50,6 @@ public class LCS
 		if (i == 0 || j == 0)
 			return;
 		
-		// LCSPrint using b table
-		/*if (b[i][j] == 1)
-		{
-			LCSPrint(b, x, i - 1, j - 1);
-			System.out.print(x.charAt(i - 1));
-		}
-		
-		else if (b[i][j] == 2)
-			LCSPrint(b, x, i - 1, j);
-		
-		else
-			LCSPrint(b, x, i, j - 1);*/
-		
-		// LCSPrint without using b table
 		if (b[i][j] == b[i - 1][j - 1] + 1)
 		{
 			LCSPrint(b, x, i - 1, j - 1);
