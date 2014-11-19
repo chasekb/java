@@ -38,3 +38,5 @@ projects completed for algorithms
 =================================
 quicksortCutoff.java
 LCS.java
+MST.java (Prim's)
+SP.java (Bellman-Ford)
