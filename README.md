@@ -36,8 +36,15 @@ WeightedQuickUnionUF.java/
 
 projects completed for algorithms
 =================================
+<<<<<<< HEAD
 quicksortCutoff.java/
 LCS.java/
 MST.java (Prim's)/
 SP.java (Bellman-Ford + Djikstra's)/
 MCM.java (matrix chain multiplication)/
+=======
+quicksortCutoff.java
+LCS.java
+MST.java (Prim's)
+SP.java (Bellman-Ford)
+>>>>>>> a0854f5f7d53fa2dd2ad2250213564f3370d51ae

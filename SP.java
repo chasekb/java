@@ -1,6 +1,7 @@
 /*
  * Kahlil Bernard Chase
  * CSC 421
+<<<<<<< HEAD
  * Final Exam
  * 25 November 2014
  * SP.java
@@ -9,13 +10,22 @@
  * implementing either Bellman-Ford or Dijkstra's. For this exercise, implement 
  * the other one. 
  * 
+=======
+ * Problem set 5
+ * 17 November 2014
+ * SP.java
+ * 
+>>>>>>> a0854f5f7d53fa2dd2ad2250213564f3370d51ae
  * Program SP (30 points) Implement one of the shortest path algorithms 
  * presented in class (Bellman-Ford or Dijstra's) in the language of your choice.
  */
 
 import java.io.FileReader;
+<<<<<<< HEAD
 import java.util.Comparator;
 import java.util.PriorityQueue;
+=======
+>>>>>>> a0854f5f7d53fa2dd2ad2250213564f3370d51ae
 import java.util.Scanner;
 import java.io.IOException;
 
@@ -33,13 +43,18 @@ public class SP
 	{
 		String filename = "data/SPadjacencyMatrix.txt";
 		processFile(filename);
+<<<<<<< HEAD
 		boolean choice = true;
 		SP(choice, adjMat, 0);
+=======
+		SP(adjMat, 0);
+>>>>>>> a0854f5f7d53fa2dd2ad2250213564f3370d51ae
 		
 		for (int i = 0; i < d.length; i++)
 		{
 			System.out.println("d[" + i + "]: " + d[i] + " pi[" + i + "]: " + pi[i]);
 		}
+<<<<<<< HEAD
 		
 		processFile(filename);
 		choice = false;
@@ -115,6 +130,14 @@ public class SP
 				}
 			}			
 		}
+=======
+	}
+
+	public static void SP(final int[][] graph, final int s)
+	{
+		// shortest path using bellman-ford
+		bellFo(graph, s);
+>>>>>>> a0854f5f7d53fa2dd2ad2250213564f3370d51ae
 	}
 	
 	public static boolean bellFo(int[][] graph, int s)
